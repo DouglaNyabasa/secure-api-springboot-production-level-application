@@ -1,4 +1,4 @@
-package com.pm.secureapispringboot.utils;
+package com.pm.secureapispringboot.event;
 
 import com.pm.secureapispringboot.entity.UserEntity;
 import com.pm.secureapispringboot.enums.EventType;
@@ -19,6 +19,6 @@ import java.util.Map;
 public class UserEvent {
 
     private UserEntity userEntity;
-    private EventType eventType;
+    private EventType type;
     private Map<?,?> data;
 }
