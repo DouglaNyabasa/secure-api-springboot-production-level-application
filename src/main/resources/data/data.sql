@@ -1,0 +1,2 @@
+INSERT INTO users(id,user_id,first_name,last_name,email,phoneNumber,bio,reference_id,image_url,created_by,updated_by)
+VALUES (0,'123e4567-e89b-12d3-a456-426614174000','System','System','system@gmail.com','078433322','This is not a user but the system itself','123e4567-e89b-12d3-a456-426614174000','https://picsum.photos/200/300?random=123','0','0')

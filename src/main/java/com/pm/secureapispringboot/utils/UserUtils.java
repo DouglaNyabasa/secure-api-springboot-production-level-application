@@ -2,6 +2,7 @@ package com.pm.secureapispringboot.utils;
 
 import com.pm.secureapispringboot.entity.RoleEntity;
 import com.pm.secureapispringboot.entity.UserEntity;
+import lombok.Builder;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

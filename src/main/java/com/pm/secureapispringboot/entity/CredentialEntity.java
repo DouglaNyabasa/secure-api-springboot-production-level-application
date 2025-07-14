@@ -18,7 +18,6 @@ import static jakarta.persistence.FetchType.*;
 
 @Entity
 @ToString
-@Builder
 @Getter
 @Setter
 @NoArgsConstructor

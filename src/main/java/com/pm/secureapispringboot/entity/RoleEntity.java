@@ -17,8 +17,6 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_DEFAULT;
 @Entity
 @ToString
 @Builder
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(NON_DEFAULT)
@@ -30,4 +28,19 @@ public class RoleEntity extends Auditable{
     private Authority authorities;
 
 
+    public String getRoleName() {
+        return roleName;
+    }
+
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
+    }
+
+    public Authority getAuthorities() {
+        return authorities;
+    }
+
+    public void setAuthorities(Authority authorities) {
+        this.authorities = authorities;
+    }
 }

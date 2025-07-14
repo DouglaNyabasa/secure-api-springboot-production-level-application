@@ -25,8 +25,6 @@ import static jakarta.persistence.FetchType.EAGER;
 @ToString
 @Builder
 @AllArgsConstructor
-@Getter
-@Setter
 @NoArgsConstructor
 @JsonInclude(NON_DEFAULT)
 @Table(name = "confirmations")
@@ -47,5 +45,21 @@ public class ConfirmationEntity extends Auditable{
 
         this.userEntity = userEntity;
         this.key = UUID.randomUUID().toString();
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public UserEntity getUserEntity() {
+        return userEntity;
+    }
+
+    public void setUserEntity(UserEntity userEntity) {
+        this.userEntity = userEntity;
     }
 }

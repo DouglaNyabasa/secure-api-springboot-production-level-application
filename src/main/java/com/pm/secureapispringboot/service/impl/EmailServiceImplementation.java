@@ -44,7 +44,7 @@ public class EmailServiceImplementation implements EmailService {
            message.setTo(email);
            message.setText(getEmailMessage(name,host,token));
         }catch (Exception exception){
-           log.error(exception.getMessage());
+//           log.error(exception.getMessage());
            throw new ApiException("Error sending new account email");
         }
 
@@ -63,7 +63,7 @@ public class EmailServiceImplementation implements EmailService {
             message.setTo(email);
             message.setText(getResetPasswordMessage(name,host,token));
         }catch (Exception exception){
-            log.error(exception.getMessage());
+//            log.error(exception.getMessage());
             throw new ApiException("Error sending new account email");
         }
 

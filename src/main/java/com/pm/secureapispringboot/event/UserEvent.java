@@ -13,12 +13,35 @@ import java.util.Map;
  * @version 1.0
  * @since 25/06/2025
  */
-@Getter
-@Setter
+
 @AllArgsConstructor
 public class UserEvent {
 
     private UserEntity userEntity;
     private EventType type;
     private Map<?,?> data;
+
+    public UserEntity getUserEntity() {
+        return userEntity;
+    }
+
+    public void setUserEntity(UserEntity userEntity) {
+        this.userEntity = userEntity;
+    }
+
+    public EventType getType() {
+        return type;
+    }
+
+    public void setType(EventType type) {
+        this.type = type;
+    }
+
+    public Map<?, ?> getData() {
+        return data;
+    }
+
+    public void setData(Map<?, ?> data) {
+        this.data = data;
+    }
 }
