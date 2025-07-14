@@ -37,7 +37,7 @@ public class CredentialEntity extends Auditable{
     @JsonProperty("user_id")
     private  UserEntity userEntity;
 
-    public CredentialEntity(String password, UserEntity userEntity) {
+    public CredentialEntity( UserEntity userEntity, String password) {
         this.password = password;
         this.userEntity = userEntity;
     }
