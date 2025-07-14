@@ -4,6 +4,7 @@ import com.pm.secureapispringboot.entity.UserEntity;
 import com.pm.secureapispringboot.enums.EventType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Map;
@@ -14,12 +15,22 @@ import java.util.Map;
  * @since 25/06/2025
  */
 
-@AllArgsConstructor
+
+
 public class UserEvent {
 
     private UserEntity userEntity;
     private EventType type;
     private Map<?,?> data;
+
+    public UserEvent() {
+    }
+
+    public UserEvent(UserEntity userEntity, EventType type, Map<?, ?> data) {
+        this.userEntity = userEntity;
+        this.type = type;
+        this.data = data;
+    }
 
     public UserEntity getUserEntity() {
         return userEntity;
